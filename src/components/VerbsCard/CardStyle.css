@@ -1,0 +1,23 @@
+.flash-card {
+    width: 260px;
+    height: 140px;
+    border: 1px solid rgba(149, 7, 7, 0.87);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgb(124, 104, 170);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.word {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+.translation {
+    font-size: 26px;
+    margin-top: 10px;
+    color: indianred;
+}
+
