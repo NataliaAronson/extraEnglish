@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
-import VocData from './VocList'
+
 
 const styles = {
   li: {
@@ -17,7 +17,7 @@ const styles = {
   }
 }
 
-function DoItem({ index,..., onChange }) {
+function DoItem({ index, word, onChange }) {
   const { removeItem} = useContext(Context)
   const classes = []
 
@@ -43,7 +43,7 @@ function DoItem({ index,..., onChange }) {
   )
 }
 
-TodoItem.propTypes = {
+DoItem.propTypes = {
   todo: PropTypes.object.isRequired,
   index: PropTypes.number,
   onChange: PropTypes.func.isRequired

@@ -1,6 +1,5 @@
 import React from 'react';
-	import './styles/tableList.css';
-	import ListFrame from './VocList';
+import ListFrame from './VocList';
 	
 	
 	
@@ -45,7 +44,7 @@ import React from 'react';
 		)
 	  }
 	  
-	  TodoList.propTypes = {
+	  VocList.propTypes = {
 		todos: PropTypes.arrayOf(PropTypes.object).isRequired,
 		onToggle: PropTypes.func.isRequired
 	  }

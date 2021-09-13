@@ -34,7 +34,7 @@ function AddWord({ onCreate }) {
   )
 }
 
-AddTodo.propTypes = {
+AddWord.propTypes = {
   onCreate: PropTypes.func.isRequired
 }
 
