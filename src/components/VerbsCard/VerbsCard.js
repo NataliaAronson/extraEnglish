@@ -1,6 +1,6 @@
 import React from 'react';
 import CardFrame from './CardFrame';
-import './VerbsCard/CardStyle.css';
+
 	
 	
 	const words = [

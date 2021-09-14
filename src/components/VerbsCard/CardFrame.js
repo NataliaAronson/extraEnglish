@@ -16,7 +16,7 @@ setText (oldState => {
 }
 
 return(
-    <div className="flash-card" onClick = {handleClick}>
+    <div className="flashcard" onClick = {handleClick}>
         {text}
     </div>
 );
