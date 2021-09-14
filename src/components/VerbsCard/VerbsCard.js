@@ -1,5 +1,6 @@
 import React from 'react';
-
+import CardFrame from './CardFrame';
+import './VerbsCard/CardStyle.css';
 	
 	
 	const words = [
@@ -20,10 +21,12 @@ import React from 'react';
 	        <div className="card">
 	            {
 	                words.map(card => (
-	                    <VerbsCard
+	                    <CardFrame
                             id={card.id}
 	                        word={card.word}
-	                        translation={card.translation}></VerbsCard>
+	                        translation={card.translation}>
+								
+							</CardFrame>
 	                ))
 	            }
 	        </div>

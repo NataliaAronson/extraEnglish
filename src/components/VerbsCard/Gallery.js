@@ -1,6 +1,5 @@
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
-import VerbsCard from '.\components\VerbsCard';
 import "react-alice-carousel/lib/alice-carousel.css";
 
 class Gallery extends React.Component {
@@ -51,3 +50,4 @@ class Gallery extends React.Component {
       );
     }
 }
+ export default Gallery;

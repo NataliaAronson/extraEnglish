@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './VerbsCard/CardStyle.css'
 
 
- function CardFrame ({word,translation}){
+
+function CardFrame ({word,translation}){
 const[text,setText] = useState (word);
 function handleClick (){
 setText (oldState => {
