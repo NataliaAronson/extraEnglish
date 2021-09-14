@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
     
-     <h1> Learn English</h1>
+     <h1> Learn Irregular verbs</h1>
        <VerbsCard/>  
       
 
