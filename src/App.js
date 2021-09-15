@@ -8,10 +8,10 @@ function App() {
     <div className="App">
     
      <h1> Learn Irregular verbs</h1>
+     
        <VerbsCard/>  
       
-
-     
+  
     </div>
   );
 }
