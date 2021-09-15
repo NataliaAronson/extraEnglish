@@ -26,7 +26,7 @@ import CardFrame from './CardFrame';
 	                        word={card.word}
 	                        translation={card.translation}>
 								
-							</CardFrame>
+						</CardFrame>
 	                ))
 	            }
 	        </div>
