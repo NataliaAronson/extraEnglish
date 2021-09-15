@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 .flashcard {
   width: 400px;
@@ -10,4 +11,13 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-  
+  .card{
+ 
+    display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+   width: 30 %;
+  }
