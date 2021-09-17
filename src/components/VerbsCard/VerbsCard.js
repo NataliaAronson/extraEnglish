@@ -18,9 +18,8 @@ import CardFrame from './CardFrame';
 	
 	function VerbsCard() {
 	    return (
-	        <div className="card">
-	            {
-	                words.map(card => (
+	        <div className= "card">
+	            { words.map(card => (
 	                    <CardFrame
                             id={card.id}
 	                        word={card.word}
