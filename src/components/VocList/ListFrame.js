@@ -1,52 +1,37 @@
-import React, { useContext } from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
 
 
-const styles = {
-  li: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: '.5rem 1rem',
-    border: '1px solid #ccc',
-    borderRadius: '4px',
-    marginBottom: '.5rem'
-  },
-  input: {
-    marginRight: '1rem'
+
+class ListFrame extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    alert('A word was submitted: ' + this.state.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Word:
+          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        </label>
+        
+        <input type="submit" value="Submit" />
+      </form>
+    );
   }
 }
 
-function DoItem({ index, word, onChange }) {
-  const { removeItem} = useContext(Context)
-  const classes = []
-
-  
-  return (
-    <li style={styles.li}>
-      <span className={classes.join(' ')}>
-        <input
-          type='checkbox'
-         
-          style={styles.input}
-          onChange={() => onChange(todo.id)}
-        />
-        <strong>{index + 1}</strong>
-        &nbsp;
-        {todo.title}
-      </span>
-
-      <button className='rm' onClick={removeItem.bind(null, todo.id)}>
-        &times;
-      </button>
-    </li>
-  )
-}
-
-DoItem.propTypes = {
-  todo: PropTypes.object.isRequired,
-  index: PropTypes.number,
-  onChange: PropTypes.func.isRequired
-}
-
-export default DoItem;
+export default ListFrame;

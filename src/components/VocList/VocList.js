@@ -1,5 +1,5 @@
 import React from 'react';
-import ListFrame from './VocList';
+
 	
 	
 	
@@ -19,34 +19,34 @@ import ListFrame from './VocList';
 	
 	
 
-	const styles = {
-		ul: {
-		  listStyle: 'none',
-		  margin: 0,
-		  padding: 0
-		}
-	  }
-	  
-	  function VocList(props) {
+	function VocList() {
+
 		return (
-		  <ul style={styles.ul}>
-			{props.words.map((word, index) => {
-			  return (
-				<VocList
-				 word={word}
-				  key={word.id}
-				  index={index}
-				  onChange={props.onToggle}
-				/>
-			  )
-			})}
-		  </ul>
-		)
-	  }
-	  
-	  VocList.propTypes = {
-		todos: PropTypes.arrayOf(PropTypes.object).isRequired,
-		onToggle: PropTypes.func.isRequired
-	  }
-	  
-	  export default VocList;
+			<div className="vocList">
+				<table className="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Word</th>
+							<th>Translation</th>
+							<th> Edit</th>
+							<th>Delete</th>
+						</tr>
+					</thead>
+					<tbody>
+						{words.map(word => (
+							<ListFrame
+								key={word.id}
+								word={word}
+								translation={translation}
+								 />
+	
+						))
+						}
+					</tbody>
+				</table>
+			</div>
+		);
+	}
+	
+	export default VocList;
